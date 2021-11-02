@@ -1,0 +1,135 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+body {
+  background: #1b1e2a; }
+
+.header, .section, .footer {
+  margin: 0 auto; }
+
+.section_card_right_container, .section_banner, .footer_wrap, .footer_logo {
+  display: flex;
+  align-items: center; }
+
+.header {
+  width: 100%;
+  height: 550px;
+  background: url("../img/m-h-night.jpg") 0 0/100% 100% no-repeat;
+  border-radius: 0 0 40em/15em 0; }
+  .header_wrap {
+    display: flex;
+    flex-direction: column;
+    margin-left: 120px; }
+    .header_wrap .landing-logo {
+      display: flex;
+      margin-top: 15px;
+      margin-bottom: 50px; }
+      .header_wrap .landing-logo p {
+        font-size: 20px;
+        margin: 0 10px;
+        display: flex;
+        flex-direction: column;
+        color: white; }
+        .header_wrap .landing-logo p span {
+          color: white;
+          font-size: 10px; }
+  .header_heading {
+    font-size: 50px;
+    font-weight: 700;
+    width: 500px;
+    color: white;
+    margin-bottom: 30px; }
+    .header_heading span {
+      background: #ff4d30; }
+  .header_text {
+    color: white;
+    width: 500px;
+    margin-bottom: 40px; }
+  .header_button {
+    margin-right: 150px;
+    width: 120px;
+    height: 40px;
+    background: #e4ae00;
+    color: white;
+    border: none;
+    font-size: 20px; }
+  .header .login {
+    color: white;
+    font-size: 20px; }
+
+.section {
+  width: 800px;
+  flex: 1 1 0;
+  position: relative; }
+  .section_text {
+    font-size: 25px;
+    text-align: center;
+    margin: 20px 0 20px 0;
+    color: white; }
+    .section_text span {
+      color: white;
+      background: #ff4d30; }
+  .section_card {
+    display: flex;
+    background: #383d4f;
+    padding: 10px;
+    margin: 10px 0; }
+    .section_card_img {
+      margin: 0 60px 0 0; }
+    .section_card_right_container {
+      flex-direction: column;
+      justify-content: center;
+      color: #ffffff;
+      width: 400px; }
+    .section_card_heading {
+      margin: 0 0 10px 0; }
+    .section_card_text {
+      margin: 0 0 10px 0; }
+    .section_card a {
+      color: white; }
+  .section_banner {
+    justify-content: space-around;
+    color: white;
+    width: 800px;
+    height: 100px;
+    position: absolute;
+    border-radius: 10px;
+    bottom: -150px;
+    z-index: 5;
+    background: #020024;
+    background: linear-gradient(90deg, #020024 0%, #dca101 0%, #962c4e 100%); }
+    .section_banner_heading {
+      font-size: 30px;
+      color: #282c34; }
+      .section_banner_heading span {
+        background: #ff4d30; }
+    .section_banner_button {
+      width: 120px;
+      height: 40px;
+      background: #e4ae00;
+      color: white;
+      border: none; }
+
+.footer {
+  width: 100%;
+  height: 150px;
+  background: #383d4f;
+  margin-top: 100px; }
+  .footer_wrap {
+    justify-content: space-around;
+    height: 100%;
+    color: #ffffff; }
+  .footer_text {
+    width: 500px; }
+  .footer_logo {
+    color: #ffffff; }
+    .footer_logo p {
+      font-size: 20px;
+      margin: 0 10px;
+      display: flex;
+      flex-direction: column; }
+      .footer_logo p span {
+        font-size: 10px; }
+
+/*# sourceMappingURL=style.css.map */

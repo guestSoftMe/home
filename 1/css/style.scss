@@ -1,0 +1,180 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+$width: 100%;
+$width500: 500px;
+$width800: 800px;
+$height: 100%;
+%margincenter {
+  margin: 0 auto;
+}
+%flex{
+  display: flex;
+  align-items: center;
+}
+
+.header {
+  @extend %margincenter;
+  width: $width;
+  height: 550px;
+  background: url('../img/m-h-day.jpg') 0 0/100% 100% no-repeat;
+  border-radius: 0 0 40em/15em 0;
+  &_wrap{
+    display: flex;
+    flex-direction: column;
+    margin-left: 120px;
+    .landing-logo{
+      display: flex;
+      margin-top: 15px;
+      margin-bottom: 50px;
+      p {
+        font-size: 20px;
+        margin: 0 10px;
+        display: flex;
+        flex-direction: column;
+        span {
+          font-size: 10px;
+        }
+      }
+    }
+  }
+  &_heading{
+    font-size: 50px;
+    font-weight: 700;
+    width: $width500;
+    color: #282c34;
+    margin-bottom: 30px;
+    span {
+      background: #0ca1c8;
+    }
+  }
+  &_text{
+    color: #282c34;
+    width: $width500;
+    margin-bottom: 40px;
+
+  }
+  &_button{
+    margin-right: 150px;
+    width: 120px;
+    height: 40px;
+    background: #699a00;
+    color: white;
+    border: none;
+    font-size: 20px;
+  }
+  .login{
+    color: white;
+    font-size: 20px;
+  }
+}
+
+.section {
+  width: 800px;
+  @extend %margincenter;
+  flex:1 1 0;
+  position: relative;
+
+  &_text {
+    font-size: 25px;
+    text-align: center;
+    margin: 20px 0 20px 0;
+
+    span {
+      background: #0ca1c8;
+    }
+  }
+
+  &_card {
+    display: flex;
+    background: #282c34;
+    padding: 10px;
+    margin: 10px 0;
+
+    &_img {
+      margin: 0 60px 0 0;
+    }
+
+    &_right_container {
+      @extend %flex;
+      flex-direction: column;
+      justify-content: center;
+      color: #ffffff;
+      width: 400px;
+    }
+
+    &_heading {
+      margin: 0 0 10px 0;
+    }
+
+    &_text {
+      margin: 0 0 10px 0;
+    }
+
+    a {
+      color: white;
+    }
+  }
+  &_banner{
+    @extend %flex;
+    justify-content: space-around;
+    color: white;
+    width: $width800;
+    height: 100px;
+    position: absolute;
+    border-radius: 10px;
+    bottom: -150px;
+    z-index: 5;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(102,151,3,1) 0%, rgba(41,91,215,1) 100%);
+    &_heading{
+      font-size: 30px;
+      color: #282c34;
+      span{
+        background: #0ca1c8;
+      }
+    }
+    &_button{
+      width: 120px;
+      height: 40px;
+      background: #699a00;
+      color: white;
+      border: none;
+    }
+  }
+}
+
+.footer {
+  width: $width;
+  height: 150px;
+  @extend %margincenter;
+  background: #282c34;
+  margin-top: 100px;
+
+  &_wrap {
+    @extend %flex;
+    justify-content: space-around;
+    height: $height;
+    color: #ffffff;
+  }
+  &_text{
+    width: $width500;
+  }
+
+  &_logo {
+    @extend %flex;
+    color: #ffffff;
+
+    p {
+      font-size: 20px;
+      margin: 0 10px;
+      display: flex;
+      flex-direction: column;
+      span {
+        font-size: 10px;
+      }
+    }
+  }
+}
